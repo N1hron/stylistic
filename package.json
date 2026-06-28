@@ -1,0 +1,36 @@
+{
+  "name": "@n1hron/stylistic",
+  "version": "1.0.0",
+  "license": "MIT",
+  "author": "N1hron",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsdown",
+    "dev": "tsdown --watch",
+    "prepublishOnly": "npm run build",
+    "publish:npm": "npm publish --access public",
+    "publish:github": "npm publish --registry https://npm.pkg.github.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/N1hron/stylistic.git"
+  },
+  "peerDependencies": {
+    "@stylistic/eslint-plugin": "^5.10.0",
+    "eslint": "^10.6.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@stylistic/eslint-plugin": "^5.10.0",
+    "eslint": "^10.6.0",
+    "jiti": "^2.7.0",
+    "tsdown": "^0.22.3",
+    "typescript": "^6.0.3",
+    "typescript-eslint": "^8.62.0"
+  }
+}
